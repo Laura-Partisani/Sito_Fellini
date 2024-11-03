@@ -440,22 +440,24 @@ input[type=text], textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.submit-container {
+  text-align: center;
+  margin-left: 100px;
   background-color: #0052cc;
-  color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+.submit-container:hover {
   background-color: #0052cc;
   opacity: 0.8;
 }
 
-.submit-container {
-  text-align: center;
+.submit-container a {
+  text-decoration: none;
+  color: #eee;
 }
 
 aside iframe {
