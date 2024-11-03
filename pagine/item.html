@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Sulle tracce di Fellini</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<nav>
+			<a href="../index.html">Home</a>
+			<span class="active">Catalogo completo</span>
+			<span>|</span>
+			<a href="#" title="Apri elenco completo film">Film</a>
+			<a href="#" title="Apri elenco completo luoghi">Luoghi</a>
+			<a href="#" title="Apri elenco completo tipologie oggetti">Tipi di oggetti</a>
+			<div class="nav-right">
+				<a href="#">Eventi & News</a>
+				<a href="#">Scopri il progetto</a>
+			</div>
+		</nav>
+
+		<header class="header-catalogo">
+			<div>
+				<h1>catalogo completo di tutte le opere</h1>
+			</div>
+		</header>
+
+    <ul class="breadcrumb">
+				<li><a href="../index.html">Home</a></li>
+        <li><a href="lista.html">Esplora il catalogo</a></li>
+        <li>“Il Libro dei Sogni” di Federico Fellini, tavola 1</li>
+		</ul>
+
+		<aside>
+			<h3>Potrebbe interessarti anche</h3>
+			<article>
+				<a href="#" title="Scopri la collezione di oggetti di Palazzo del Fulgor"><img src="../img/palazzo-fulgor.jpg">
+				<div class="text-on-img" style="bottom: 20px;">Scopri la collezione di oggetti di Palazzo del Fulgor</div>
+				</a>
+			</article>
+			<hr/>
+			<article>
+				<a href="#" title="Scopri tutte le tavole illustrate de “Il Libro dei Sogni”"><img src="../img/copertina-libro1.jpg">
+				<div class="text-on-img" style="bottom: 40px;">Scopri tutte le tavole illustrate de “Il Libro dei Sogni”</div>
+				</a>
+			</article>
+			<hr/>
+			<article>
+				<a href="#" title="Tavola successiva"><img src="../img/libro-dei-sogni4.jpg">
+				<div class="text-on-img" style="bottom: 20px; font-size: 19px;">Visualizza la pagina successiva</div>
+				</a>
+			</article>
+		</aside>
+
+		<div id="paginaitem">
+			<h1>“Il Libro dei Sogni” di Federico Fellini, tavola 1</h1>
+			<div class="tutte-info">
+				<img id="myImg" src="../img/libro-dei-sogni.jpg" style="width:300px; height: 100%;" title="“Il Libro dei Sogni” di Federico Fellini, tavola 1">
+				<div id="myModal" class="modal">
+				  <span class="close">&times;</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				</div>
+				<div class="metadati">
+					<h3>Metadati</h3>
+					<p><span class="dc.title">Titolo:</span> Tavola 1 - La grande “fabbricante dissolvitrice” di nubi</p>
+					<p><span class="dc.isPartOf">Contenuto in:</span> Il Libro dei Sogni</p>
+					<p><span class="dc.creator">Autore:</span> 
+		            	<a href="http://viaf.org/viaf/76315386" title="Identificativo VIAF di Fellini, Federico" target="_blank"> Fellini, Federico<sup> VIAF</sup></a>
+		            </p>
+		            <p><span class="dc.publisher">Editore:</span> [Milano] Rizzoli, 2007 (prima edizione)</p>
+		            <p><span class="dc.contributor">Curatori:</span>
+		            	<a href="http://viaf.org/viaf/24636617" title="Identificativo VIAF di Kezich, Tullio" target="_blank"> Kezich, Tullio<sup> VIAF</sup></a>,
+		            	<a href="http://viaf.org/viaf/64226880" title="Identificativo VIAF di Boarini, Vittorio" target="_blank"> Boarini, Vittorio<sup> VIAF</sup></a>,
+		            	<a href="http://viaf.org/viaf/13485510" title="Identificativo VIAF di Mollica, Vincenzo" target="_blank"> Mollica, Vincenzo<sup> VIAF</sup></a>,
+		            	<a href="http://id.loc.gov/authorities/names/no2004010122" title="Identificativo VIAF della Fondazione Federico Fellini" target="_blank"> Fondazione Federico Fellini<sup> VIAF</sup></a>
+		            </p>
+		            <p><span class="dc.date">Data di pubblicazione:</span> 2007</p>
+		            <p><span class="dc.type">Tipologia di oggetto:</span> Testo a stampa; monografia</p>
+		            <p><span class="dc.format">Formato: </span><a href="http://vocab.getty.edu/page/aat/300311820" title="Identificativo Getty di libro illustrato" target="_blank">Libro illustrato<sup> Getty</sup></a>;<a href="http://vocab.getty.edu/page/aat/300200567" title="Identificativo Getty di copertina rigida"target="_blank"> copertina rigida<sup> Getty</sup></a></p>
+					<p><span class="dc.extent">Dimensioni:</span> 25.2 x 35.3 cm</p>
+					<p><span class="dc.identifier">Codice ISBN:</span> 9788817018517</p>
+					<p>
+						<span class="dc.subject">Tag:</span>
+						<a href="http://vocab.getty.edu/page/aat/300027354" title="Identificativo Getty di sketchbook" target="_blank"> #sketchbook<sup> Getty</sup></a>,
+						<a href="http://vocab.getty.edu/page/aat/300027112" title="Identificativo Getty di diario" target="_blank"> #diario<sup> Getty</sup></a>,
+						<a href="http://vocab.getty.edu/page/aat/300054141" title="Identificativo Getty di film" target="_blank"> #film<sup> Getty</sup></a>,
+						<a href="https://www.geonames.org/3169361/rimini.html" title="Identificativo GeoNames di Rimini" target="_blank"> #Rimini<sup> GeoNames</sup></a>, 
+						<a href="http://vocab.getty.edu/page/aat/300054196" title="Identificativo Getty di disegno" target="_blank"> #disegno<sup> Getty</sup></a>
+					</p>
+          <p>
+          	<span class="dc.coverage">Luogo di conservazione:</span>
+          	<a href="https://www.wikidata.org/wiki/Q108294156" title="Pagina Wikidata di Fellini Museum" target="_blank"> Palazzo del Fulgor, Fellini Museum, Rimini <sup>Wikidata</sup></a></p>
+          <p>
+          	<span class="dc.coverage">Ubicazione:</span>
+          	<a href="https://maps.app.goo.gl/MeaqbjbWA5sVxonQ9" target="_blank" title="Apri Google Maps"> Via Giuseppe Verdi, 16, 47921 Rimini RN</a>
+          </p>
+          <hr/>
+          <p>Visualizza il <a href="../xml/item-DC-qualified.xml" target="_blank" title="Apre il file XML/DC relativo all'item">file XML/DC</a> | Visualizza il <a href="../xml/item-TEI.xml" target="_blank" title="Apre il file XML/TEI relativo all'item">file XML/TEI</a></p>
+		    </div>
+			</div>
+
+			<div class="descrizioneitem">
+				<h3>Descrizione</h3>
+				<p>Un viaggio attraverso le stanze più segrete e intime della creatività di Federico Fellini, una ”vera e propria cosmografia personale in cui i tracciati emotivi, sentimentali, culturali, erotici, affettivi, si intrecciano a quelli geografici, architettonici, memoriali, immaginativi, fantastici”. L'opera di Federico Fellini non può dirsi completa senza questo volume, che è anche un “libro dei film”, esattamente come i suoi film sono anche il “cinema dei sogni”. In una veste rinnovata, arricchita da inediti apparati critici, un libro che è un unicum nell'universo cinematografico del Novecento, per tutti gli appassionati, gli studiosi e gli amanti del cinema.</p>
+				<p>Il libro dei sogni è un diario, tenuto da Federico Fellini dalla fine degli anni Sessanta fino all'agosto 1990, nel quale il regista ha riportato fedelmente i suoi sogni e incubi notturni sotto forma di disegni, o nella sua stessa definizione di “segnacci, appunti affrettati e sgrammaticati”</p>
+				<hr/>
+				<h3>Trascrizione testo tavola 1</h3>
+				<p><span>Balloon:</span> Eccola lì, Fefè, la grande “Fabbricante Dissolvitrice” di nubi! Eccola tutta lì!</p>
+				<p><span>Commento aggiuntivo:</span> (Nel sogno mi sembrava di stare sognando un sogno fatto tantissimi anni fa)</p>
+				<p><span>Narrazione:</span> Sogno - <span class="dcterms:created" style="color:#1a1a1a;">Dicembre 74</span>
+				<br/>Nel cesto di una mongolfiera insieme a <a href="https://www.wikidata.org/wiki/Q16975" title="Pagina Wikidata di papa Paolo VI" target="_blank"> Paolo VI <sup>Wikidata</sup></a> che aveva in testa il camauro. La situazione poteva considerarsi anche pericolosa perchè sopra la nostra navicella non si vedeva nessuna mongolfiera. Tutto andava bene <i>[testo cancellato]</i> ugualmente ed io non avevo paura. Sotto di noi la spiaggia e il mare di <a href="https://www.geonames.org/6541982/riccione.html" title="Identificativo GeoNames di Riccione" target="_blank"> Riccione<sup> GeoNames</sup></a> affollatissimi di gente che guardava in aria indicando qualcosa. Ed ecco apparire più alta e vasta del <a href="https://www.geonames.org/3181986/mont-blanc.html" title="Identificativo GeoNames del Monte Bianco" target="_blank"> Monte Bianco<sup> GeoNames</sup></a> una meravigliosa creatura in costume da bagno.<br/>Era una donna, una dea, assomigliava... <i>[testo mancante]</i> guardava il cielo azzurro, senza vederci poi dalla bellissima, morbida bocca emetteva un “oh” come di meraviglia e tutto il cielo si riempiva di nubi bianche.</p>
+			</div>
+		</div>
+
+		<footer>
+		      <p>Copyright © 2024 Laura Partisani | Alma Mater Studiorum - Università di Bologna</p>
+		      <p>Creazione: 01/10/2024 | Ultimo aggiornamento: 05/11/2024</p>
+		      <p>Quest'opera è distribuita con Licenza <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY - NC 4.0 International</a></p>
+		</footer>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+		  <i class="fa fa-arrow-up"></i>
+		</button>
+
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	
+
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		var img = document.getElementById("myImg");
+		var modalImg = document.getElementById("img01");
+		var captionText = document.getElementById("caption");
+		img.onclick = function(){
+		  modal.style.display = "block";
+		  modalImg.src = this.src;
+		  captionText.innerHTML = this.alt;
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mp:metadata xmlns:mp="http://example.org/MyProject/" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:dc="http://purl.org/dc/elements/1.1/" 
+xmlns:dcterms="http://purl.org/dc/terms/" 
+xsi:schemaLocation="http://example.org/MyProject/ http://example.org/MyProject/schema.xsd">
+<dc:title>Tavola 1</dc:title>
+<dcterms:created>Dicembre 1974</dcterms:created>
+<dc:isPartOf xsi:type="dcterms:LCSH" mp:ref="https://id.loc.gov/resources/works/15169570.html">Il libro dei sogni</dc:isPartOf>
+<dc:creator xsi:type="dcterms:LCSH" mp:ref="http://id.loc.gov/authorities/names/n79056202">Fellini, Federico</dc:creator>
+<dc:subject>disegno, diario, bozzetto, sketchbook, film, immaginazione, sogno, cinema, mare, rimini</dc:subject>
+<dc:subject xsi:type="dcterms:AAT" mp:ref="http://vocab.getty.edu/page/aat/300027354">sketchbook</dc:subject>
+<dc:subject xsi:type="dcterms:AAT" mp:ref="http://vocab.getty.edu/page/aat/300027112">diario</dc:subject>
+<dc:subject xsi:type="dcterms:AAT" mp:ref="http://vocab.getty.edu/page/aat/300054141">film</dc:subject>
+<dc:subject xsi:type="dcterms:TGN" mp:ref="http://vocab.getty.edu/page/tgn/7004929">Rimini</dc:subject>
+<dc:description>Il libro dei sogni è un diario, tenuto da Federico Fellini dalla fine degli anni Sessanta fino all'agosto 1990, nel quale il regista ha riportato fedelmente i suoi sogni e incubi notturni sotto forma di disegni, o nella sua stessa definizione di “segnacci, appunti affrettati e sgrammaticati”</dc:description>
+<dc:publisher xsi:type="mp:viaf" mp:ref="http://viaf.org/viaf/267578241">[Milano] Rizzoli, 2007</dc:publisher>
+<dc:coverage xsi:type="dcterms:TGN" mp:ref="http://vocab.getty.edu/page/tgn/7004929">Palazzo del Fulgor, Via Giuseppe Verdi, 16, 47921 Rimini RN</dc:coverage>
+<dc:date>2007</dc:date>
+<dc:contributor xsi:type="dcterms:LCSH" mp:ref="http://id.loc.gov/authorities/names/n79111443">Kezich, Tullio</dc:contributor>
+<dc:contributor xsi:type="dcterms:LCSH" mp:ref="http://id.loc.gov/authorities/names/n82222625">Boarini, Vittorio</dc:contributor>
+<dc:contributor xsi:type="dcterms:LCSH" mp:ref="http://id.loc.gov/authorities/names/n80043859">Mollica, Vincenzo</dc:contributor>
+<dc:contributor xsi:type="dcterms:LCSH" mp:ref="http://id.loc.gov/authorities/names/no2004010122">Fondazione Federico Fellini</dc:contributor>
+<dc:type>Testo</dc:type>
+<dc:type>Monografia</dc:type>
+<dc:format xsi:type="dcterms:AAT" mp:ref="http://vocab.getty.edu/page/aat/300311820">Libro illustrato</dc:format>
+<dc:format xsi:type="dcterms:AAT" mp:ref="http://vocab.getty.edu/page/aat/300200567">Copertina rigida</dc:format>
+<dc:extent>583 p.</dc:extent>
+<dc:extent>25.2 x 35.3 cm</dc:extent>
+<dc:identifier>ISBN: 9788817018517</dc:identifier>
+<dc:source>IT\ICCU\LIG\0326245</dc:source>
+<dc:language>ita</dc:language>
+<dc:abstract>Un viaggio attraverso le stanze più segrete e intime della creatività di Federico Fellini, una ”vera e propria cosmografia personale in cui i tracciati emotivi, sentimentali, culturali, erotici, affettivi, si intrecciano a quelli geografici, architettonici, memoriali, immaginativi, fantastici”. L'opera di Federico Fellini non può dirsi completa senza questo volume, che è anche un “libro dei film”, esattamente come i suoi film sono anche il “cinema dei sogni”. In una veste rinnovata, arricchita da inediti apparati critici, torna un libro che è un unicum nell'universo cinematografico del Novecento, offrendosi a tutti gli appassionati, agli studiosi e a nuovi lettori.</dc:abstract>
+</mp:metadata>

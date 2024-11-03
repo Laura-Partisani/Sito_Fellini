@@ -1,0 +1,664 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a1a;
+  font-family: Arial;
+  height: 100%;
+  margin: 0;
+}
+
+.header-home {
+  background-image: url(../img/fellini-personaggi1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px; 
+  height: 550px;
+}
+
+.header-home div {
+  text-align: center;
+  width: 85%;
+  height: 370px;
+  margin: auto; 
+  margin-top: 80px;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 10px;
+  color: #1a1a1a;
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 15px;
+  text-shadow: 3px 3px 3px #eee;
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+}
+
+.header-home h1 {
+  font-size: 60px;
+  color: red;
+}
+
+.catalogo {  
+  font-size: 18px;
+  border-radius: 16px;
+  background-color: #f4420b;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  padding: 18px;
+  width: 320px;
+  cursor: pointer;
+}
+
+.catalogo a {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.catalogo a:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.catalogo:hover a {
+  padding-right: 25px;
+}
+
+.catalogo:hover {
+  background-color: #f6673c;
+}
+
+.catalogo:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
+nav {
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+nav a, nav span {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+nav span.active {
+  background-color: red;
+  color: white;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+main {
+  color: #fff; 
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.presentazione-sito {
+  width: 70%;
+  font-family: Libre Baskerville, sans-serif; 
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.presentazione-sito p {
+  font-size: 16px;
+  color: #1a1a1a;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.accessi-catalogo h2 {
+  font-family: Libre Baskerville, sans-serif; 
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.ricercaluogo {
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 15px;
+  color: #1a1a1a;
+  width: 70%; 
+  position: relative;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#map {
+  height: 400px;
+  width: 100%; 
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.popup-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+#expand-btn {
+  position: absolute;
+  top: 90px;
+  right: 25px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#expand-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.card-film, .card-oggetti {
+  border: 1px solid #ccc;
+  margin: 50px 0px;
+  padding: 15px;
+  color: #1a1a1a;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%; 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  width: 25%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  max-height: 230px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  width: 34%;
+  border-bottom: 1px solid #ccc;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14px;
+  color: #eee;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 4px;
+  color: #eee;
+  content: ">";
+}
+
+ul.breadcrumb li a {
+  color: #33ccff;
+  text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+  color: #33ccff;
+  text-decoration: underline;
+}
+
+#leftcolumn {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #fff666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra orizzontalmente */
+}
+
+#leftcolumn hr {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.ricercafilm, .ricercatipo, .ricerca-luogo {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 400px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.film-list, .type-list {
+  list-style-type: none;
+  margin: 0;
+  max-height: 250px;
+  overflow-y: auto; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.film-list li, .type-list li {
+  padding: 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.film-list li:hover, .type-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.numero-item {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 20%;
+  padding: 3px 6px;
+  float: right;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.header-catalogo {
+  background-image: url(../img/pellicola.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px; 
+  height: 300px;
+}
+
+.header-catalogo div {
+  text-align: center;
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  margin-top: 80px; 
+  justify-content: center;
+  align-content: center;
+  color: #1a1a1a;
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 15px;
+  text-shadow: 3px 3px 3px #eee;
+  text-transform: uppercase;
+  font-family: "Libre Baskerville", serif;
+}
+
+.header-catalogo h1 {
+  font-size: 45px;
+  color: red;
+}
+
+.griglia {
+  float: right;
+  width: 70%;
+}
+
+.griglia img {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.foto {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  margin: 15px 5px 15px 20px;
+  transition: 0.3s;
+  float: left;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.foto:hover {
+  box-shadow: 0 8px 16px 0 rgb(0, 0, 0, 0.8);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Sfondo nero trasparente */
+  color: white;
+  text-align: center;
+  opacity: 0;  /* Nasconde il testo inizialmente */
+  transition: opacity 0.3s ease;  /* Aggiunge un effetto di transizione */
+  padding: 10px;
+  border-radius: 0 0 8px 8px; /* Arrotonda solo gli angoli inferiori */
+}
+
+.foto:hover .overlay {
+    opacity: 1;  /* Mostra il testo al passaggio del mouse */
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  clear: both;
+  margin: 15px 610px 15px 610px;
+  padding: 2px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  }
+
+.pagination a {
+  color: #eee;
+  float: left;
+  padding: 6px 8px 6px 8px;
+  margin: 8px;
+  text-decoration: none; 
+  border-radius: 8px;
+}
+
+.pagination a:hover {
+  background-color: #0052cc;
+  color: white;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #0052cc;
+  color: white;
+  text-decoration: none;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding: 30px;
+  background-color: #fff666;
+}
+
+.contatti {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #0052cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0052cc;
+  opacity: 0.8;
+}
+
+.submit-container {
+  text-align: center;
+}
+
+aside iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+aside img {
+  width: 100%;
+  max-height: 380px;
+}
+
+aside h3, h4 {
+  text-align: center;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+aside article {
+  position: relative;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 14px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+aside article a:hover {
+  opacity: 0.8;
+}
+
+.text-on-img {
+  position: absolute;
+  left: 20px;
+  color: #eee;
+  padding: 10px;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px black, -2px -2px 5px black;
+}
+
+#paginaitem {
+  margin-left: 60px;
+  margin-right: auto;
+}
+
+#paginaitem h1 {
+  margin-left: 10px;
+  font-size: 34px;
+  color: #eee;
+}
+
+.tutte-info {
+  display: flex;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  height: 150px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.metadati {
+  width: 650px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.metadati a, .descrizioneitem a, .accessi-catalogo a {
+  text-decoration: none;
+  color: #0052cc;
+}
+
+.metadati a:hover, .descrizioneitem a:hover, .accessi-catalogo a:hover {
+  text-decoration: underline;
+}
+
+.descrizioneitem {
+  width: 68.5%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.metadati span, .descrizioneitem span {
+  color: grey;
+}
+
+.metadati sup, .descrizioneitem sup {
+  font-size: 10px;
+}
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #444;
+  color: #ddd;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #0052cc;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 52px;
+}
+
+#myBtn:hover {
+  background-color: #0052cc;
+  opacity: 0.8;
+}

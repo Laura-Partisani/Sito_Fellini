@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sulle tracce di Fellini</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="Collezione di tutti gli oggetti legati alla vita e alle opere del regista Federico Fellini conservati Rimini e delle opere d'arte realizzate in suo onore o a celebrazione dei suoi film">
+		<meta name="keywords" content="Fellini, film, collezioni, costumi di scena, locandine, murales, cinema, disegni, pellicole, museo, attori, sogni, Rimini">
+		<meta name="author" content="Laura Partisani">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="DC.Title" content="Sulle tracce di Fellini"> 
+    <meta name="DC.Creator" content="Laura Partisani"> 
+    <meta name="DC.Subject" content="Opere d'arte realizzate dal regista Federico Fellini o ispirate ai suoi film conservate a Rimini">
+    <meta name="DC.Description" content="Collezione di oggetti e opere legate alla figura del regista Federico Fellini e dei suoi film conservate a Rimini"> 
+    <meta name="DC.Publisher" content="GitHub">
+    <meta name="DC.Contributor" content="Laura Partisani">
+    <meta name="DC.Date" content="2024"> 
+    <meta name="DC.Type" content="Catalogo"> 
+    <meta name="DC.Type" content="Images"> 
+    <meta name="DC.Format" content="HTML"> 
+    <meta name="DC.Identifier" content="">
+
+<!--manca URL del mio sito!-->
+
+    <meta name="DC.Language" content="Italian"> 
+    <meta name="DC.Coverage" content="Rimini">
+    <meta name="DC.Rights" content="Copyright 2024, Laura Partisani">
+    <meta name="DC.Rights" content="http://creativecommons.org/licenses/by-nc/4.0/">
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+	</head>
+
+	<body>
+		
+		<nav>
+			<span class="active">Home</span>
+			<a href="pagine/lista.html" title="Apri elenco completo">Catalogo completo</a>
+			<span>|</span>
+			<a href="#" title="Apri elenco completo film">Film</a>
+			<a href="#" title="Apri elenco completo luoghi">Luoghi</a>
+			<a href="#" title="Apri elenco completo tipologie oggetti">Tipi di oggetti</a>
+			<div class="nav-right">
+				<a href="#">Eventi & News</a>
+				<a href="#">Scopri il progetto</a>
+			</div>
+		</nav>
+
+		<header class="header-home">
+			<div>
+				<h1>Sulle tracce di Fellini</h1>
+				<h2 style="font-size: 30px;">Passeggiando a Rimini attraverso i luoghi del grande regista</h2>
+				<h3 style="font-size: 25px;">Scopri la collezione completa</h3>
+				<button class="catalogo"><a href="pagine/lista.html" title="Apri il catalogo completo">Visualizza il catalogo completo</a></button>
+			</div>
+		</header>
+
+		<aside>
+			<div>
+				<h3>Scopri di più</h3>
+				<h4 style="font-size: 14px;">Spettacolo inaugurale<br/> Fellini Museum Rimini (2021)</h4>
+				<iframe src="https://www.youtube.com/embed/OTYDl4aIvDA?si=mKyzH4AIxc4lBxHX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<h4 style="font-size: 14px;">Video presentazione<br/>Fellini Museum Rimini</h4>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/t3k7wRtzu_k?si=GdyVpb9wxIPmDK6O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				<h4 style="font-size: 14px;">Visita la galleria a cielo aperto<br/>del Borgo San Giuliano</h4>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/GlkwPpozRQQ?si=7Uzha_fJq3mQRpgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<hr/>
+			<h3>Novità nel catalogo</h3>
+			<article>
+				<a href="pagine/item.html"><img src="img/libro-dei-sogni.jpg" title="“Il Libro dei Sogni” di Federico Fellini, tavola 1">
+				<div class="text-on-img" style="bottom: 20px;">“Il Libro dei Sogni” di<br/>Federico Fellini, tavola 1</div>
+				</a>
+			</article>
+			<hr/>
+			<div>
+				<h3>Contattaci</h3>
+				<div class="contatti">
+					<p>Cerchi informazioni sulle opere di Federico Fellini conservate a Rimini? Vorresti saperne di più sul Fellini Museum o sui murales del Borgo San Giuliano? Stai organizzando una gita alla scoperta della Rimini felliniana e non sai da dove iniziare?
+					Scrivici tramite questo modulo, il nostro staff ti contatterà il prima possibile.</p>
+				  	<form action="action_page.php">
+					    <label for="fname">Nome</label>
+					    <input type="text" id="fname" name="firstname">
+					    <label for="email">Email</label>
+					    <input type="text" id="email" name="email">
+					    <label for="subject">Richiesta</label>
+					    <textarea id="subject" name="subject" style="height:100px">
+					    </textarea>
+					    <div class="submit-container">
+					    	<input type="submit" value="Invia">
+					  	</div>
+				  	</form>
+				</div>
+			</div>
+		</aside>
+	
+
+
+		<main>
+
+			<div class="presentazione-sito">
+				<h2 style="font-size: 30px;">La città di Rimini ricorda Federico Fellini attraverso i luoghi simbolo della sua infanzia e delle sue opere cinematografiche</h2>
+				<h3 style="font-family: Cinzel, sans-serif; font-size: 30px;"><i>“Rimini è una dimensione della memoria”</i></h3>
+ 				<p>Il rapporto tra il regista e la sua città natale è racchiuso in queste sue parole, che tengono insieme il sogno e la realtà.</p>
+				<p>Federico Fellini nasce a Rimini il 20 gennaio 1920. La sua casa natale si trovava a Marina Centro, non distante da quello che oggi si chiama proprio piazzale Federico Fellini e dove un tempo c'era stato il Kursaal, considerato il cuore mondano delle vacanze riminesi e delle feste estive.</p>
+				<p>Nel moderno piazzale Fellini ancora oggi si può ammirare il Grand Hotel di Rimini, un elegante edificio in stile Liberty inaugurato nel 1908 per attirare personaggi noti e ospiti facoltosi: “Il mondo fiabesco dei ricchi e del lusso”, un sogno della giovinezza reso celebre da Fellini nel suo Amarcord.</p>
+				<p>Anche il centro storico di Rimini è fonte di ispirazione per il regista: Corso d’Augusto, dove sorge il Cinema Fulgor, il cinema dove il Federico vide il suo primo film da bambino, e piazza Cavour, con la sua Fontana della Pigna, vengono immortalati nelle scene più iconiche dei suoi film.</p>
+				<p>Il Borgo San Giuliano fa da cornice agli eventi narrati in “Amarcord”, borgo che oggi rende omaggio al regista con i suoi coloratissimi murales ispirati alle opere e ai personaggi felliniani.</p>
+				<p>È a Rimini che Federico Fellini passa tutta la sua infanzia e giovinezza e anche se si trasferirà molto presto a Roma, evidentemente questa città e la sua gente segneranno per sempre quello sguardo sulle cose e sul mondo così particolare.</p>
+				<p>Ecco perchè Rimini ha omaggiato il grande regista con una serie di opere d'arte, suggestive location a lui intitolate, rievocazioni e percorsi artistici per scoprire il mondo di Fellini sempre al limite tra la realtà e l’assurdo, con la sua vitalità verace e le sue contraddizioni tragiche e comiche allo stesso tempo.</p>
+			</div>
+
+			<div class="accessi-catalogo" style="margin-top: 50px;">
+				<h2><i class="fa fa-arrow-right" style="margin-right: 20px;"></i>Inizia subito a esplorare il catalogo!</h2>
+
+				<section class="card-film">
+					<h3>Esplora il catalogo per Film</h3>
+					<p>Scegli tra i film più cercati o <a href="#" title="Apri elenco completo film">apri l'elenco completo</a></p>
+					<div style="display: flex;">
+						<div class="card">
+						  <img src="img/dolcevita.jpg" title="La Dolce Vita">
+						  <div class="container">
+						    <h4><b>La Dolce Vita</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/amarcord.jpg" title="Amarcord">
+						  <div class="container">
+						    <h4><b>Amarcord</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/vitelloni.jpg" title="I Vitelloni">
+						  <div class="container">
+						    <h4><b>I Vitelloni</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/elanaveva.jpg" title="E la nave va">
+						  <div class="container">
+						    <h4><b>E la nave va</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/lastrada.jpg" title="La Strada">
+						  <div class="container">
+						    <h4><b>La Strada</b></h4> 
+						  </div>
+						</div>
+					</div>
+				</section>
+				
+				<section class="ricercaluogo">
+					<h3>Esplora il catalogo per luogo</h3>
+					<p>Scegli sulla mappa o <a href="#" title="Apri elenco completo luoghi">apri l'elenco completo</a></p>
+						<div id="map"></div>
+						  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+						  <script>
+						    var map = L.map('map').setView([44.06764, 12.57171], 14);
+
+						    // Aggiungi il layer di OpenStreetMap
+						    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+						      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+						    }).addTo(map);
+
+						    // Elenco dei punti di interesse con foto
+						    var locations = [
+						      {
+						        lat: 44.0615617, 
+						        lng: 12.5658917,
+						        title: "Cinema Fulgor",
+						        imgUrl: "img/cinemafulgor.jpg",
+						        link: "#"
+						      },
+						      {
+						        lat: 44.0613242,
+						        lng: 12.5655040,
+						        title: "Palazzo del Fulgor - Fellini Museum",
+						        imgUrl: "img/palazzo-fulgor.jpg",
+						        link: "#"
+						      },
+						      {
+						        lat: 44.072548, 
+						        lng: 12.576739,
+						        title: "Grand Hotel Rimini",
+						        imgUrl: "img/grand-hotel.jpg",
+						        link: "#"
+						      },
+						      {
+						        lat: 44.064923160484305, 
+						        lng: 12.564026640889507,
+						        title: "Borgo San Giuliano",
+						        imgUrl: "img/ladolcevita.jpg",
+						        link: "#"
+						      },
+							  {
+							    lat: 44.06044906844223, 
+							    lng: 12.56464584400721, 
+							    title: "Piazza Malatesta - “Piazza dei Sogni”",
+							    imgUrl: "img/piazza-dei-sogni.jpg",
+							    link: "#"
+							  },
+							  {
+						        lat: 44.07161030476875, 
+						        lng: 12.548535672687889, 
+						        title: "Cimitero monumentale di Rimini",
+						        imgUrl: "img/tomba-fellini.jpg",
+						        link: "#"
+						      },
+						      {
+						      	lat: 44.05980863735533, 
+							    lng: 12.563590094219856, 
+							    title: "Castel Sismondo - Fellini Museum",
+							    imgUrl: "img/castel-sismondo.jpg",
+							    link: "#"
+						      },
+						      {
+						        lat: 44.05960003247825, 
+						        lng: 12.564571014574545,
+						        title: "Il Bosco dei nomi di Tonino Guerra",
+						        imgUrl: "img/bosco-dei-nomi.jpg",
+						        link: "#"
+						      },
+						 
+						    ];
+
+						    // Aggiungi marker con popup e link
+						    locations.forEach(function(location) {
+						      var marker = L.marker([location.lat, location.lng]).addTo(map);
+						      
+						      // Contenuto del popup: immagine e nome del monumento
+						      var popupContent = '<h4>' + location.title + '</h4>' +
+						                         '<img class="popup-image" src="' + location.imgUrl + '" alt="' + location.title + '">';
+
+						      // Associa il popup al marker
+						      marker.bindPopup(popupContent);
+
+						      // Mostra il popup al passaggio del mouse
+						      marker.on('mouseover', function() {
+						        this.openPopup();
+						      });
+
+						      // Associa il popup al marker senza il pulsante di chiusura
+						      marker.bindPopup(popupContent, { closeButton: false });
+
+						      // Chiudi il popup quando il mouse si allontana
+						      marker.on('mouseout', function() {
+						        this.closePopup();
+						      });
+
+						      // Associa il link al click sul marker
+						      marker.on('click', function() {
+						        window.open(location.link, '_blank'); // Apre il link in una nuova scheda
+						      });
+						    });
+						  </script>	
+					</section>
+
+
+				<section class="card-oggetti">
+					<h3>Esplora il catalogo per tipologia</h3>
+					<p>Scegli tra le ricerche più frequenti o <a href="#" title="Apri elenco completo tipologie oggetti">apri l'elenco completo</a></p>
+					<div style="display: flex;">
+						<div class="card">
+						  <img src="img/costume-casanova.jpg">
+						  <div class="container">
+						    <h4><b>Costumi di scena</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/libro-dei-sogni2.jpg">
+						  <div class="container">
+						    <h4><b>Disegni</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/locandina-fred-ginger.jpg">
+						  <div class="container">
+						    <h4><b>Locandine film</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/giuliettamasina.jpg">
+						  <div class="container">
+						    <h4><b>Murales</b></h4> 
+						  </div>
+						</div>
+
+						<div class="card">
+						  <img src="img/altalena.jpg">
+						  <div class="container">
+						    <h4><b>Sculture</b></h4> 
+						  </div>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</main>
+
+
+		<footer>
+			<div class="copyright">
+		      <p>Copyright © 2024 Laura Partisani | Alma Mater Studiorum - Università di Bologna</p>
+		      <p>Creazione: 01/10/2024 | Ultimo aggiornamento: 05/11/2024</p>
+		      <p>Quest'opera è distribuita con Licenza <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons BY - NC 4.0 International</a></p>
+		    </div>
+		</footer>
+
+
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">
+		  <i class="fa fa-arrow-up"></i>
+		</button>
+
+		<!-- lo script si posiziona alla fine del documento-->
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+
+
+
+
+
+	</body>
+</html>
