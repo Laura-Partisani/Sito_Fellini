@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Il Libro dei Sogni</title>
+				<respStmt>
+					<resp>Autore</resp>
+					<name xml:id="FF">Federico Fellini</name>
+				</respStmt>
+				<respStmt>
+					<resp>Curatore</resp>
+					<name xml:id="TK">Tullio Kezich</name>
+				</respStmt>
+				<respStmt>
+					<resp>Curatore</resp>
+					<name xml:id="VB">Vittorio Boarini</name>
+				</respStmt>
+				<respStmt>
+					<resp>Curatore</resp>
+					<name>Fondazione Federico Fellini</name>
+				</respStmt>
+				<respStmt>
+					<resp>Postfazione</resp>
+					<name xml:id="VM">Vincenzo Mollica</name>
+				</respStmt>
+			</titleStmt>
+
+			<publicationStmt>
+			    <publisher>Laura Partisani</publisher>
+			    <date>05-11-2024</date>
+			    <availability>
+			        <p>Disponibile sotto licenza Creative Commons BY-NC-SA</p>
+			    </availability>
+			</publicationStmt>
+
+			<sourceDesc>
+			    <bibl>
+			        <author>Federico Fellini</author>
+			        <title>Il Libro dei Sogni</title>
+			        <publisher>Rizzoli</publisher>
+			        <pubPlace>Milano</pubPlace>
+			        <date>2007</date>
+			        <idno type="ISBN">9788817018517</idno>
+			    </bibl>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+
+	<text>
+		<front>
+			<div type="prefazione">
+				<head>Il Libro dei Sogni, finalmente!</head>
+				<author>VB</author>
+			</div>
+			<div type="prefazione">
+				<head>Somnii Explanatio, ovvero in quel regno dove tutto è possibile</head>
+				<author>TK</author>
+			</div>
+		</front>
+
+		<body>
+			<div type="volume" n="1">
+				<head>Volume Primo, 1960-1968</head>
+				<figure>
+					<graphic url="../img/libro-dei-sogni.jpg"/>
+					<figDesc>Disegno di una gigantesca donna in costume da bagno avvolta dalle nuvole; sulla sinistra il cestello di una mongolfiera con a bordo Federico Fellini e Paolo VI; in basso si intravede la spiaggia.</figDesc>
+				</figure>
+				<div type="page" n="1">
+					<div type="balloon">
+						<p>Eccola lì, <name type="person" role="nickname">Fefè</name>, la grande “Fabbricante Dissolvitrice” di nubi! Eccola tutta lì!</p>
+					</div>
+					<div type="commento">
+						<p>(Nel sogno mi sembrava di stare sognando un sogno fatto tantissimi anni fa)</p>
+					</div>
+					<div type="descrizione">
+						<head>Sogno - <date>Dicembre 74</date></head>
+						<p>Nel cesto di una mongolfiera insieme a <name type="person">Paolo VI</name> che aveva in testa il camauro. La situazione poteva considerarsi anche pericolosa perchè sopra la nostra <add place="infralinear" type="explanation">navicella</add> non si vedeva nessuna mongolfiera. Tutto andava bene <del>[illeggibile]</del> ugualmente ed io non avevo paura. Sotto di noi la spiaggia e il mare di <name type="place">Riccione</name> affollatissimi di gente che guardava in aria indicando qualcosa. Ed ecco apparire più alta e vasta del <name type="place">Monte Bianco</name> una meravigliosa creatura in costume da bagno. Era una donna, una dea, assomigliava... <gap reason="omission"/> guardava il cielo azzurro, senza vederci poi dalla bellissima, morbida bocca emetteva un “oh” come di meraviglia e tutto il cielo si riempiva di nubi bianche.</p>
+					</div>
+				</div>
+			</div>
+			<div type="volume" n="2">
+				<head>Volume Secondo, 1973-1990</head>
+			</div>
+		</body>
+
+		<back>
+			<div type="appendice">
+				<head>Fogli sparsi</head>
+			</div>
+			<div type="appendice">
+				<head>Fogli regalati</head>
+			</div>
+			<div type="postfazione">
+				<head>Il disperso dei dispersi</head>
+				<author>VM</author>
+			</div>
+			<div type="indice">
+				<head>Indice dei nomi</head>
+			</div>
+		</back>
+	</text>
+</TEI>
